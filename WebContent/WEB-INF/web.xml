@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>StuReg</display-name>
+	<servlet>
+		<servlet-name>sendCode</servlet-name>
+		<servlet-class>com.yuwei.web.servlet.SendCode</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>sendCode</servlet-name>
+		<url-pattern>/sendCode</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ssendCode</servlet-name>
+		<servlet-class>com.yuwei.web.servlet.SSendCode</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ssendCode</servlet-name>
+		<url-pattern>/ssendCode</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>register</servlet-name>
+		<servlet-class>com.yuwei.web.servlet.Register</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>register</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>sregister</servlet-name>
+		<servlet-class>com.yuwei.web.servlet.SRegister</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>sregister</servlet-name>
+		<url-pattern>/sregister</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>index</servlet-name>
+		<servlet-class>com.yuwei.web.servlet.Index</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>index</servlet-name>
+		<url-pattern>/index</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>queryData</servlet-name>
+		<servlet-class>com.yuwei.web.servlet.QueryData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>queryData</servlet-name>
+		<url-pattern>/queryData</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>download</servlet-name>
+		<servlet-class>com.yuwei.web.servlet.Download</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>download</servlet-name>
+		<url-pattern>/download</url-pattern>
+	</servlet-mapping>
+</web-app>

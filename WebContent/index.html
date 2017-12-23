@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <title>应急卡</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body style="margin: 0;padding: 0;border: 0">
+
+<script language="JavaScript" src="js/InterfaceJs.js"></script>
+<script language="JavaScript" src="js/md5.js"></script>
+
+<div style="width: 100%;height: auto;margin: 0; padding: 0">
+
+    <img width="100%" src="img/icon_yj_top.png" align="center">
+
+    <div style="width: 100%;height: 100%;background-color:transparent;margin: 0; padding: 0;border:0;position: relative">
+
+        <img width="100%" src="img/icon_yj_content_bg.png" align="center"
+             style="margin: 0; padding: 0;border:0;position: absolute;z-index: 0">
+
+        <div style="width: 80%;height: 265px;overflow:hidden;background-color:white;border:1px solid #d69924;
+            margin-left: 10%;margin-right: 10%;margin-top: 20px;
+            border-radius:8px;padding: 0;position: absolute;z-index: 1">
+
+            <div style="width: 90%;height: auto;margin-left: 5%;margin-right: 5%;padding-top: 6px">
+
+                <input id="phoneId" type="text" style="width: 100%;height: 30px;
+                border:0;font-size: 16px ;vertical-align: middle" placeholder="请输入手机号"/>
+
+                <hr style="width: 100%;height: 1px;border: none; border-top: 1px solid #d69924"/>
+
+                <input id="pwd" type="password" style="width: 100%;height: 30px;
+                border:0;font-size: 16px ;vertical-align: middle" placeholder="请设置密码"/>
+
+                <hr style="width: 100%;height: 1px;border: none; border-top: 1px solid #d69924"/>
+
+            </div>
+
+            <div style="width: 90%;height: 30px;position: relative;margin-left: 5%;margin-right: 5%">
+
+                <input id="code" type="text" style="width: 100%;height: 100%;
+                    border:0;font-size: 16px ;vertical-align: middle" placeholder="请输入短信验证码"/>
+
+                <button id="sendBtn" style="width: 100px;height: 100%;border:0;position: absolute;right: 0;top: 0;
+                    background-color: transparent;font-size: 16px;color: #dd5252;border-left: 1px solid #d69924;"
+                        onclick="sendCode('phoneId','sendBtn')">获取验证码
+                </button>
+
+            </div>
+
+            <div style="width: 90%;height: auto;margin-left: 5%;margin-right: 5%">
+
+                <hr style="width: 100%;height: 1px;border: none; border-top: 1px solid #d69924"/>
+
+                <button style="width: 100%;height: 40px;border:0;margin-top:26px;
+                    background-color: #e4484b;border-radius:8px;font-size: 16px;color: white"
+                        onclick="register('phoneId','code','pwd','checkid')">完成注册
+                </button>
+
+                <p id= "checkid" source="#####" style="width: 100%;text-align:center;font-size: 10px;color: #a7874c">
+                    点击按钮则视为同意
+                    <span style="color: #e4484b">《服务协议》</span></p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
